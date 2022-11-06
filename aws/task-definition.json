@@ -1,0 +1,108 @@
+{
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:087921534622:task-definition/online-banking-dev:22",
+    "containerDefinitions": [{
+        "name": "sso",
+        "image": "087921534622.dkr.ecr.us-east-1.amazonaws.com/onlinebanking:c8a3ee156078df0d0dfb5131eb9e2bf8e494fe0b",
+        "cpu": 0,
+        "links": [],
+        "portMappings": [{
+                "containerPort": 80,
+                "hostPort": 80,
+                "protocol": "tcp"
+            },
+            {
+                "containerPort": 5555,
+                "hostPort": 5555,
+                "protocol": "tcp"
+            },
+        ],
+        "essential": true,
+        "entryPoint": [],
+        "command": [],
+        "environment": [],
+        "environmentFiles": [],
+        "mountPoints": [],
+        "volumesFrom": [],
+        "secrets": [],
+        "dnsServers": [],
+        "dnsSearchDomains": [],
+        "extraHosts": [],
+        "dockerSecurityOptions": [],
+        "dockerLabels": {},
+        "ulimits": [],
+        "logConfiguration": {
+            "logDriver": "awslogs",
+            "options": {
+                "awslogs-create-group": "true",
+                "awslogs-group": "/ecs/sso",
+                "awslogs-region": "us-east-1",
+                "awslogs-stream-prefix": "ecs"
+            },
+            "secretOptions": []
+        },
+        "systemControls": []
+    }],
+    "family": "sso",
+    "taskRoleArn": "arn:aws:iam::087921534622:role/ecsTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::087921534622:role/ecsTaskExecutionRole",
+    "networkMode": "awsvpc",
+    "revision": 22,
+    "volumes": [],
+    "status": "ACTIVE",
+    "requiresAttributes": [{
+            "name": "com.amazonaws.ecs.capability.logging-driver.awslogs"
+        },
+        {
+            "name": "ecs.capability.execution-role-awslogs"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.ecr-auth"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.17"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.task-iam-role"
+        },
+        {
+            "name": "ecs.capability.execution-role-ecr-pull"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+        },
+        {
+            "name": "ecs.capability.task-eni"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.29"
+        }
+    ],
+    "placementConstraints": [],
+    "compatibilities": [
+        "EC2",
+        "FARGATE"
+    ],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "1024",
+    "memory": "3072",
+    "runtimePlatform": {
+        "cpuArchitecture": "X86_64",
+        "operatingSystemFamily": "LINUX"
+    },
+    "registeredAt": "2022-11-06T06:30:44.038Z",
+    "registeredBy": "arn:aws:iam::087921534622:root",
+    "tags": [{
+            "key": "ecs:taskDefinition:createdFrom",
+            "value": "ecs-console-v2"
+        },
+        {
+            "key": "ecs:taskDefinition:stackId",
+            "value": "arn:aws:cloudformation:us-east-1:087921534622:stack/ECS-Console-V2-TaskDefinition-eb5d4c97-2cc1-4a91-af6e-784f5eb1eef6/38abea40-55ac-11ed-8a22-0e4be547c027"
+        }
+    ]
+}
