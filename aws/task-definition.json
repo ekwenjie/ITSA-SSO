@@ -14,7 +14,7 @@
                 "containerPort": 5555,
                 "hostPort": 5555,
                 "protocol": "tcp"
-            },
+            }
         ],
         "essential": true,
         "entryPoint": [],
