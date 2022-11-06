@@ -1,6 +1,6 @@
 import jwt
 import requests
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, Response
 from flask_cors import CORS
 from datetime import date
 import time 
@@ -8,6 +8,12 @@ import os
 
 app = Flask(__name__)
 CORS(app)
+
+# healthcheck
+@app.route("/", methods=['GET'])
+def healthcheck():
+    return Response("200", status=200, mimetype='application/json')
+
 
 #TODO: CHANGE CALLBACK URI, REMOVE CLIENT ID/SECRET
 

@@ -43,8 +43,8 @@
         "systemControls": []
     }],
     "family": "sso",
-    "taskRoleArn": "arn:aws:iam::087921534622:role/ecsTaskExecutionRole",
-    "executionRoleArn": "arn:aws:iam::087921534622:role/ecsTaskExecutionRole",
+    "taskRoleArn": "arn:aws:iam::183201325337:role/ecsTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::183201325337:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
     "revision": 22,
     "volumes": [],
