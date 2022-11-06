@@ -31,7 +31,7 @@ def post_access_token(code):
     url = 'https://smurnauth-production.fly.dev/oauth/token'
 
     #input other details via config
-    details = {"client_id": os.environ.get("CLIENT_ID"), 'client_secret': os.environ.get("CLIENT_SECRET"), 'redirect_uri': callback_uri, 'grant_type': "authorization_code", 'code': code }
+    details = {"client_id": os.getenv("CLIENT_ID"), 'client_secret': os.getenv("CLIENT_SECRET"), 'redirect_uri': callback_uri, 'grant_type': "authorization_code", 'code': code }
     print(callback_uri)
     data = requests.post(url, json=details)
     data_open = data.json()
