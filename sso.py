@@ -83,7 +83,7 @@ def get_access_token(data):
             {
                 "code":200,
                 "data": userinfo,
-                "message": "Logged in successfully"
+                "message": "Logged in via SSO successfully"
             }
         )
 
