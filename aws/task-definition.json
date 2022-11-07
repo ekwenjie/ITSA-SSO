@@ -20,7 +20,7 @@
         "entryPoint": [],
         "command": [],
         "environment": [],
-        "environmentFiles": [{ "value": "arn:aws:s3:::itsa-sso-secrets/.env", "type": "s3" }],
+        "environmentFiles": [],
         "mountPoints": [],
         "volumesFrom": [],
         "secrets": [],
@@ -30,16 +30,6 @@
         "dockerSecurityOptions": [],
         "dockerLabels": {},
         "ulimits": [],
-        "logConfiguration": {
-            "logDriver": "awslogs",
-            "options": {
-                "awslogs-create-group": "true",
-                "awslogs-group": "/ecs/sso",
-                "awslogs-region": "us-east-1",
-                "awslogs-stream-prefix": "ecs"
-            },
-            "secretOptions": []
-        },
         "systemControls": []
     }],
     "family": "sso",
