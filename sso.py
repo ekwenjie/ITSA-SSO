@@ -14,7 +14,6 @@ CORS(app)
 def healthcheck():
     return Response("200", status=200, mimetype='application/json')
 
-
 #TODO: CHANGE CALLBACK URI, REMOVE CLIENT ID/SECRET
 
 #TODO: Change to login frontend
