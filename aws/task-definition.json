@@ -93,16 +93,5 @@
     "runtimePlatform": {
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
-    },
-    "registeredAt": "2022-11-06T06:30:44.038Z",
-    "registeredBy": "arn:aws:iam::087921534622:root",
-    "tags": [{
-            "key": "ecs:taskDefinition:createdFrom",
-            "value": "ecs-console-v2"
-        },
-        {
-            "key": "ecs:taskDefinition:stackId",
-            "value": "arn:aws:cloudformation:us-east-1:087921534622:stack/ECS-Console-V2-TaskDefinition-eb5d4c97-2cc1-4a91-af6e-784f5eb1eef6/38abea40-55ac-11ed-8a22-0e4be547c027"
-        }
-    ]
+    }
 }
