@@ -20,7 +20,7 @@
         "entryPoint": [],
         "command": [],
         "environment": [],
-        "environmentFiles": [],
+        "environmentFiles": [{ "value": "arn:aws:s3:::itsa-sso-secrets/.env", "type": "s3" }],
         "mountPoints": [],
         "volumesFrom": [],
         "secrets": [],
