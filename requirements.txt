@@ -3,3 +3,5 @@ Flask-Cors==3.0.10
 PyJWT==2.6.0
 DateTime==4.6
 requests==2.25.1
+cryptography==38.0.1
+cffi==1.15.1
