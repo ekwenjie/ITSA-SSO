@@ -93,5 +93,5 @@ def get_access_token(data):
         )
 
 if __name__ == '__main__':
-    #Run app on port 5000, debug mode
-    app.run(debug=True, port=5555)
+    #Run app on port 5555, debug mode
+    app.run(debug=True, port=5555, host="0.0.0.0")
